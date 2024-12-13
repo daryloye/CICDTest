@@ -20,3 +20,9 @@ jobs:
           go version
           ls
           go test
+
+      - name: Checkout private repo
+        uses: actions/checkout@v4
+        with:
+          repository: pjteh/NP-private-repo
+          token: ${{secrets.PANDA_TOKEN}}
