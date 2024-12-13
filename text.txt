@@ -1,0 +1,7 @@
+calc.go
+calc_goblin_test.go
+coverage.out
+go.mod
+go.sum
+test
+text.txt
