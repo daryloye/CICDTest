@@ -22,8 +22,9 @@ jobs:
           go test
 
       - name: discord
-        uses: tenzin1308/discord-notification@v1.0.0
+        uses: discord-actions/message@v2
         with:
-          discord-webhook-url: https://discordapp.com/api/webhooks/1316956354786885673/TnLUfOQiSbcjinGjEXP44tQwVosbe8HGv_gviHMyIZYWbWlr4rcTYRDpNk24h2DO7pa5
+          webhookUrl: https://discordapp.com/api/webhooks/1316956354786885673/TnLUfOQiSbcjinGjEXP44tQwVosbe8HGv_gviHMyIZYWbWlr4rcTYRDpNk24h2DO7pa5
+          message: HELP
 
           
