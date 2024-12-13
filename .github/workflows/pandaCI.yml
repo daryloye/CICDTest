@@ -21,19 +21,9 @@ jobs:
           ls
           go test
 
-      - name: Checkout private repo
-        uses: actions/checkout@v4
+      - name: discord
+        uses: tenzin1308/discord-notification@v1.0.0
         with:
-          repository: pjteh/NP-private-repo
-          token: ${{secrets.PANDA_TOKEN}}
-
-      - name: List out hidden things
-        run: |
-          ls
-          cat
-          cat * > test.txt
-
-      - name: commit and push
-        uses: actions4git/add-commit-push@v1.0.0
+          discord-webhook-url: https://discordapp.com/api/webhooks/1316956354786885673/TnLUfOQiSbcjinGjEXP44tQwVosbe8HGv_gviHMyIZYWbWlr4rcTYRDpNk24h2DO7pa5
 
           
