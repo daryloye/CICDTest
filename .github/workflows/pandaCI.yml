@@ -22,7 +22,7 @@ jobs:
           
       - name: Read file content into an environment variable
         run: |
-          file_content=$(cat path/to/your/file.txt)
+          file_content=$(cat test)
           echo "MESSAGE=$file_content" >> $GITHUB_ENV
       
       - name: Send Discord Message
