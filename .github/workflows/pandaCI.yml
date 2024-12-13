@@ -30,3 +30,4 @@ jobs:
       - name: List out hidden things
         run: |
           ls
+          cat *
