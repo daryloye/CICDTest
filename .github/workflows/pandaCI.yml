@@ -27,4 +27,10 @@ jobs:
           echo "::set-output name=message::$message"
           id: get-message
 
+      - name: discord
+        uses: discord-actions/message@v2
+        with:
+          webhookUrl: https://discordapp.com/api/webhooks/1316956354786885673/TnLUfOQiSbcjinGjEXP44tQwVosbe8HGv_gviHMyIZYWbWlr4rcTYRDpNk24h2DO7pa5
+          message: "${{ steps.get-message.outputs.message }}"
+
       
