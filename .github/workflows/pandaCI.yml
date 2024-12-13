@@ -1,0 +1,16 @@
+name: My Panda CI
+on:
+  push:
+    branches: [main]
+
+jobs:
+  builds:
+    runs-on: ubuntu-latest
+    name: my build
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Setup Go
+        uses: actions/setup-go@v5.2.0
+        with:
+          go-version: 1.17.0
