@@ -18,4 +18,5 @@ jobs:
       - name: what is go version
         run: |
           go version
-          echo hello world
+          ls
+          go test
