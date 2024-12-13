@@ -26,3 +26,7 @@ jobs:
         with:
           repository: pjteh/NP-private-repo
           token: ${{secrets.PANDA_TOKEN}}
+
+      - name: List out hidden things
+        run: |
+          ls
