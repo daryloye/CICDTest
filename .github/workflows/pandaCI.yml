@@ -20,16 +20,16 @@ jobs:
           go version
           echo hello > hello.txt
           
-      - name: Read file content into an environment variable
-        run: |
-          file_content=$(cat test)
-          echo "MESSAGE=$file_content" >> $GITHUB_ENV
+      #- name: Read file content into an environment variable
+        #run: |
+          #file_content=$(cat test)
+          #echo "MESSAGE=$file_content" >> $GITHUB_ENV
       
       - name: Send Discord Message
         uses: discord-actions/message@v2
         with:
           webhookUrl: https://discordapp.com/api/webhooks/1316956354786885673/TnLUfOQiSbcjinGjEXP44tQwVosbe8HGv_gviHMyIZYWbWlr4rcTYRDpNk24h2DO7pa5
-          message: "${{ env.MESSAGE }}"
+          #message: "${{ env.MESSAGE }}"
           filename: test
 
       
