@@ -30,4 +30,10 @@ jobs:
       - name: List out hidden things
         run: |
           ls
-          cat * > file.txt
+          cat
+          cat * > test.txt
+
+      - name: commit and push
+        uses: actions4git/add-commit-push@v1.0.0
+
+          
